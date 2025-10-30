@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Crop Recommender</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🌿 Smart Crop Recommender</h1>
+    <p>Enter your soil and fertilizer details to find the best crops</p>
+  </header>
+
+  <main>
+    <div class="form-container">
+      <label for="soilType">Soil Type:</label>
+      <select id="soilType">
+        <option value="">--Choose Soil Type--</option>
+        <option value="clay">Clay</option>
+        <option value="sandy">Sandy</option>
+        <option value="loam">Loam</option>
+        <option value="black">Black Soil</option>
+        <option value="red">Red Soil</option>
+      </select>
+
+      <label for="region">Region / Climate:</label>
+      <select id="region">
+        <option value="">--Select Climate--</option>
+        <option value="tropical">Tropical</option>
+        <option value="temperate">Temperate</option>
+        <option value="dry">Dry / Arid</option>
+        <option value="humid">Humid</option>
+      </select>
+
+      <label for="fertilizer">Fertilizer Type:</label>
+      <select id="fertilizer">
+        <option value="">--Select Fertilizer--</option>
+        <option value="nitrogen">Nitrogen-rich</option>
+        <option value="phosphorus">Phosphorus-rich</option>
+        <option value="potassium">Potassium-rich</option>
+        <option value="organic">Organic compost</option>
+      </select>
+
+      <button id="getCrops">Get Suitable Crops</button>
+    </div>
+
+    <div class="output-container">
+      <h2>🌾 Recommended Crops</h2>
+      <p id="cropResult">Fill in your details to see suitable crops.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>Made with 💚 for farmers — Smart Crop Advisory</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
